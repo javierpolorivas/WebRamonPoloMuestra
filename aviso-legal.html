@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aviso legal | Ramón Polo S.A.</title>
+  <meta name="description" content="Aviso legal y protección de datos de Ramón Polo S.A." />
+
+  <!-- Misma fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tu CSS principal -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Estilo mínimo SOLO para esta página (no afecta a la home) -->
+  <style>
+    .legal{
+      padding: 84px 0 64px;
+    }
+    .legal-card{
+      max-width: 920px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      box-shadow: 0 14px 40px rgba(0,0,0,.22);
+      padding: 26px;
+    }
+    .legal h1{
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      letter-spacing: -.02em;
+      line-height: 1.1;
+    }
+    .legal .meta{
+      margin: 0 0 18px;
+      color: rgba(184,198,189,.95);
+      font-weight: 600;
+    }
+    .legal p{
+      margin: 0 0 14px;
+      color: rgba(234,242,236,.86);
+      line-height: 1.7;
+    }
+    .legal .divider{
+      height: 1px;
+      background: rgba(234,242,236,.10);
+      margin: 18px 0;
+    }
+    .legal a{
+      color: var(--accent);
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 2px;
+    }
+    .legal .back{
+      display:inline-flex;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header simple reutilizando tu estilo -->
+  <header class="site-header" aria-label="Cabecera">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#inicio" aria-label="Ir a la página principal">
+        <img src="img/logoRamonPolo.png" alt="Ramón Polo S.A." />
+
+      </a>
+
+      <nav class="nav" aria-label="Menú">
+        <a class="nav-cta" href="index.html#inicio">Volver a inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <article class="legal-card" aria-label="Aviso legal">
+        <h1>Aviso legal</h1>
+        <p class="meta">
+          Responsable: Ramón Polo S.A. · Contacto: <a href="mailto:info@ramonpoloaceitunas.com">info@ramonpoloaceitunas.com</a>
+        </p>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <p>
+          El autor de este aviso legal y el responsable del tratamiento de estos datos es Ramon Polo S.A. A efecto de notificaciones,
+          su dirección se encuentra en Carretera de la Isla, km 3,9, Dos Hermanas (Sevilla) o vía e-mail
+          <a href="mailto:info@ramonpoloaceitunas.com">info@ramonpoloaceitunas.com</a>.
+        </p>
+
+        <p>
+          Los datos suministrados o manejados por el responsable en la página web, siguen el estricto dictado de lo dispuesto en el RGPD.
+        </p>
+
+        <p>
+          Le informamos que no se realizará ninguna cesión de datos a terceros, salvo aquellas necesarias para el cumplimiento de la relación
+          contractual, así como en los supuestos legalmente exigidos.
+        </p>
+
+        <p>
+          Los datos de carácter personal serán tratados cumpliendo con las medidas técnicas y organizativas necesarias para garantizar la seguridad,
+          integridad y confidencialidad de los datos de carácter personal conforme a lo dispuesto en el Reglamento General de Protección de Datos
+          de Carácter Personal UE 679/2016.
+        </p>
+
+        <p>
+          El usuario garantiza que los datos proporcionados a través de los formularios u otras formas de comunicación son correctos y exactos.
+          Asimismo, los contenidos de esta página web no están dirigidos a menores de 14 años, adoptándose en consecuencia todas las medidas necesarias
+          a tal efecto.
+        </p>
+
+        <p>
+          Podrá ejercitar sus derechos de acceso, rectificación, cancelación, oposición y portabilidad en la dirección en Carretera de la Isla, km 3,9,
+          Dos Hermanas (Sevilla) o vía e-mail
+          <a href="mailto:info@ramonpoloaceitunas.com">info@ramonpoloaceitunas.com</a>.
+        </p>
+
+        <a class="btn btn-ghost back" href="index.html#inicio">← Volver a la web</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Ramón Polo S.A. · Todos los derechos reservados</p>
+      <div class="footer-links">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
